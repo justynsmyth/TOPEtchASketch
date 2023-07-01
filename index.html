@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etch-A-Sketch</title>
+    <script src="java.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body style="background-color: #00274c">
+    <header class="header">
+      <h1 class="title">Etch a Sketch</h1>
+    </header>
+    <div id="outside">
+      <div id="slidecontainer">
+        <input
+          id="slider"
+          class="slider"
+          type="range"
+          min="1"
+          max="64"
+          value="16"
+        />
+        <div class="slideButtons">
+          <button class="options">Minimum</button>
+          <input id="input" placeholder="Custom Number"></input>
+          <button class="options">Maximum</button>
+        </div>
+        <p class="textInfo"> </p>
+        <button class="reset"> RESET </button>
+        <button class="eraser"> ERASE </button>
+        <div class="modePicker">
+            <button class="random"> random </button> 
+            <button class="darken"> darken </button>
+            <button class="color"> color </button>
+            <input id="colorPicker" type="color" value="#556AF1">
+        </div>
+      </div>
+      <div class="grid"></div>
+    </div>
+    <footer class="footer"> 
+        <p> Made by Justin Smith 
+            <script>
+                document.write(new Date().getFullYear());
+            </script>
+        </p>
+        
+    </footer>
+  </body>
+</html>
